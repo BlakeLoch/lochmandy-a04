@@ -1,0 +1,23 @@
+# lochmandy-a02
+
+# Project exclude paths
+.gradle
+build
+build/classes/java/main/
+
+/.gradle
+/build
+/build/classes/java/main/
+
+*/.gradle
+*/build
+*/build/classes/java/main/
+
+build/
+.gradle/
+
+/build/
+/.gradle/
+
+*/build/
+*/.gradle/
