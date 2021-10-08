@@ -1,0 +1,29 @@
+@startuml
+
+class FileInput {
+  -String inputFile
+  -ArrayList<String> names
+  -openFile()
+  -readNames()
+  -closeFile()
+  +getNames()
+}
+
+class NameSorter {
+  -ArrayList<String> names
+  -sortNames()
+  +setNames()
+  +getNames()
+}
+
+class FileOutput {
+  -String outputFile
+  -ArrayList<String> names
+  -openFile()
+  -closeFile()
+  +setNames()
+  +writeNames()
+}
+
+
+@enduml
