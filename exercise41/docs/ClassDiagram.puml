@@ -1,28 +1,16 @@
 @startuml
 
 class FileInput {
-  -String inputFile
-  -ArrayList<String> names
-  -openFile()
-  -readNames()
-  -closeFile()
+  +readNames()
   +getNames()
 }
 
 class NameSorter {
-  -ArrayList<String> names
-  -sortNames()
-  +setNames()
-  +getNames()
+  +sortNames(List<String> names)
 }
 
 class FileOutput {
-  -String outputFile
-  -ArrayList<String> names
-  -openFile()
-  -closeFile()
-  +setNames()
-  +writeNames()
+  +writeNames(List<String> names)
 }
 
 

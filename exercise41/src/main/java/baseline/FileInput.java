@@ -5,38 +5,37 @@
 
 package baseline;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class FileInput {
 
-  //Select File
-  String inputFile = "exercise41_input.txt";
-  //Store Data
-  List<String> names = new ArrayList<>();
-
-  //open file
-  private void openFile() {
-    // open file with name inputFile
-  }
-
-  //close file
-  private void closeFile() {
-    // close file with name inputFile
-  }
-
   //read names into array list
-  private void readNames() {
-    // open file
-    // loop through file
-    // store values in names
-    // close file
-  }
+  public List<String> readNames() {
+    //Select File
+    String inputFile = "data/exercise41_input.txt";
 
-  // return names
-  public List<String> getNames() {
-    // read names
-    // return names
+    //Store Data
+    List<String> names = new ArrayList<>();
+
+    // open file
+    File input = new File(inputFile);
+    try (Scanner readFile = new Scanner(input)) {
+      // loop through file
+      while (readFile.hasNextLine()) {
+        // store values in names
+        names.add(readFile.nextLine());
+      }
+      // close file
+    } catch (FileNotFoundException e) {
+      System.out.println("An error occurred.");
+      e.printStackTrace();
+    }
+
+    return names;
   }
 
 }

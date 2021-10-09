@@ -5,45 +5,44 @@
 
 package baseline;
 
-import java.util.ArrayList;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.List;
 
 public class FileOutput {
 
-  //Link Class
-  public static NameSorter sorter = new NameSorter();
+  //write names to output file
+  public void writeNames(List<String> names) {
 
-  //Select File
-  String outputFile = "exercise41_output.txt";
-  //Store Data
-  List<String> names = new ArrayList<>();
-
-  //open file
-  private void openFile() {
-    // create file with name outputFile
-    // open file with name outputFile
-  }
-
-  //close file
-  private void closeFile() {
-    // close file with name outputFile
-  }
-
-  //read names into array list
-  public void writeNames() {
+    //Select file
+    String outputFile = "data/exercise41_output.txt";
     // open file
-    // write "Total of 'names'.length names"
-    // write "-----------------"
-    // loop through file
-    // store values in names
-    // close file
+    try (FileWriter output = new FileWriter(outputFile)) {
+      // write "Total of 'names'.length names"
+      output.write("Total of " + names.size() + " names\n");
+      // write "-----------------"
+      output.write("-----------------\n");
+
+      // add index to be able to check if the name is tha last one
+      int i = 0;
+
+      // loop through file
+      for (String name : names) {
+        // write name to file
+        output.write(name);
+
+        // If it is not the last name in the list, write a newline
+        if (++i != names.size()) {
+          output.write("\n");
+        }
+      }
+
+      // close file
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+
   }
 
-  //set names with info from NameSorter
-  public void setNames() {
-    // set names list to match the list from NameSorter
-    // for each name in names
-    // add the name to this names list
-  }
 
 }

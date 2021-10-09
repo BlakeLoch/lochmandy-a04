@@ -1,9 +1,0 @@
-
-C
-java:S1144"-Remove this unused private "openFile" method.(Ãñ­î
-D
-java:S1144".Remove this unused private "closeFile" method.(ÅÇ¼š
-m
-java:S1104"RMake sorter a static final constant or non-public and provide accessors if needed.(ã×ôëøÿÿÿÿ
-G
-java:S1444",Make this "public static sorter" field final(ã×ôëøÿÿÿÿ

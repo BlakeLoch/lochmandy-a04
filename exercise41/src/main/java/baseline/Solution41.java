@@ -5,6 +5,9 @@
 
 package baseline;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Solution41 {
 
   public static void main(String[] args) {
@@ -15,13 +18,13 @@ public class Solution41 {
     FileOutput fileOut = new FileOutput();
 
     // Import data from file
-    fileIn.getNames();
+    List<String> names = new ArrayList<>(fileIn.readNames());
 
     // Sort list alphabetically
-    sorter.setNames();
+    sorter.sortNames(names);
 
     // Print output to file
-    fileOut.writeNames();
+    fileOut.writeNames(names);
 
   }
 
