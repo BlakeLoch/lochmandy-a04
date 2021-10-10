@@ -1,0 +1,16 @@
+@startuml
+
+class FileInput {
+  +readData()
+}
+
+class DataParser {
+  +parseData(List<String> rawData)
+}
+
+class FileOutput {
+  +writeTable(List<String> dataTable)
+}
+
+
+@enduml
