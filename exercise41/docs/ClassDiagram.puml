@@ -2,7 +2,6 @@
 
 class FileInput {
   +readNames()
-  +getNames()
 }
 
 class NameSorter {
