@@ -5,6 +5,8 @@
 
 package baseline;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.List;
 
 public class FileOutput {
@@ -13,19 +15,32 @@ public class FileOutput {
   public void writeTable(List<String> dataTable) {
 
     // Select file
+    String outputFile = "data/exercise42_output.txt";
     // open file
-    // write "Last      First     Salary"
-    // write "--------------------------"
+    try (FileWriter output = new FileWriter(outputFile)) {
+      // write "Last      First     Salary"
+      output.write("Last      First     Salary\n");
+      // write "--------------------------"
+      output.write("--------------------------\n");
 
-    // add index to be able to check if the name is tha last one
+      // add index to be able to check if the name is tha last one
+      int i = 0;
 
-    // loop through dataTable
+      // loop through file
+      for (String row : dataTable) {
+        // write row to file
+        output.write(row);
 
-    // write data to file
+        // If it is not the last row in the list, write a newline
+        if (++i != dataTable.size()) {
+          output.write("\n");
+        }
+      }
 
-    // If it is not the last item in the list, write a newline
-
-    // close file
+      // close file
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
 
   }
 }
