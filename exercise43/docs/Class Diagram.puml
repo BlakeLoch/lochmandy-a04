@@ -1,0 +1,18 @@
+@startuml
+
+class InputClass {
+  +getSiteNameFromUser()
+  +getAuthorFromUser()
+  +askIfJavaScriptFolder()
+  +askIfCssFolder()
+}
+
+
+class OutputClass {
+  +createWebFolder(String siteName)
+  +createIndexHtml(String siteName, String author)
+  +createJavaScriptFolder(String siteName, Boolean javaScriptFolder)
+  +createCssFolder(String siteName, Boolean cssFolder)
+}
+
+@enduml
