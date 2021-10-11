@@ -5,6 +5,7 @@ class InputClass {
   +getAuthorFromUser()
   +askIfJavaScriptFolder()
   +askIfCssFolder()
+  -getYesOrNo
 }
 
 
