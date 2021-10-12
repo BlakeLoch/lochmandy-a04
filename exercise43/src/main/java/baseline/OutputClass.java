@@ -13,7 +13,7 @@ import java.util.List;
 
 public class OutputClass {
 
-  private static final String WEBSITE = "website";
+  private static final String WEBSITE = "data/website";
   private static final String CREATED_WEBSITE = "Created ./website/";
   private static final String DIRECTORY_ALREADY_EXISTS = "Directory already exists";
 
