@@ -5,16 +5,32 @@
 
 package baseline;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.Scanner;
+
 public class InputClass {
+
+  private static final Scanner input = new Scanner(System.in);
 
   public String readFile() {
     // read file as a string
+    String data = "";
+    try {
+      data =  Files.readString(Path.of("data/exercise45_input.txt"));
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
     // return the string
+   return data;
   }
 
   public String getOutputFileNameFromUser() {
     // prompt the user for output file name
+    System.out.print("Where should the output be written? ");
     // return user input
+    return input.nextLine();
   }
 
 }

@@ -24,7 +24,7 @@ public class Solution45 {
     String outputFile = input.getOutputFileNameFromUser();
 
     // Write output to new file
-    output.writeToFile(outputFile, outputString)
+    output.writeToFile(outputFile, outputString);
 
   }
 

@@ -9,7 +9,9 @@ public class CalcClass {
 
   public String replaceUtilizeWithUse(String data) {
     // replace each "utilize" with "use"
+    data = data.replace("utilize", "use");
     // return modified string
+    return data;
   }
 
 }
