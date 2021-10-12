@@ -1,0 +1,16 @@
+@startuml
+
+class InputClass {
+  +readFile()
+}
+
+class CalcClass {
+  +replaceUtilizeWithUse(String data)
+}
+
+
+class OutputClass {
+  +writeToFile(String outputFile, String outputString)
+}
+
+@enduml
