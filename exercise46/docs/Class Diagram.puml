@@ -1,0 +1,16 @@
+@startuml
+
+class InputClass {
+  +readFile()
+}
+
+class CalcClass {
+  +countOccurrences(String data)
+}
+
+
+class OutputClass {
+  +printHistogram(List<Map<String, Integer>> frequencies)
+}
+
+@enduml
