@@ -1,14 +1,8 @@
 
-N	java:S106"9Replace this use of System.out or System.err by a logger.(½±Ç±
-N	java:S106"9Replace this use of System.out or System.err by a logger.(üéöÎ
-S	java:S106""9Replace this use of System.out or System.err by a logger.(È Ä¬ÿÿÿÿÿ
-N	java:S1060"9Replace this use of System.out or System.err by a logger.(ÍÌ÷
-N	java:S1063"9Replace this use of System.out or System.err by a logger.(üéöÎ
-N	java:S106?"9Replace this use of System.out or System.err by a logger.(©¸ğ…
-U	java:S106B"9Replace this use of System.out or System.err by a logger.(üéöÎ8ßéŠÇ/
-c
-java:S1192"HDefine a constant instead of duplicating this literal "website" 4 times.(í´£àùÿÿÿÿ
-i
-java:S1192"SDefine a constant instead of duplicating this literal "Created ./website/" 4 times.(½±Ç±
-o
-java:S1192"YDefine a constant instead of duplicating this literal "Directory already exists" 3 times.(üéöÎ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ˆû™­ıÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÂÆæ¦üÿÿÿÿ
+N	java:S1068"9Replace this use of System.out or System.err by a logger.(´ºƒÆ
+N	java:S106F"9Replace this use of System.out or System.err by a logger.(½‚Î²
+S	java:S106I"9Replace this use of System.out or System.err by a logger.(ÂÆæ¦üÿÿÿÿ
+S	java:S106U"9Replace this use of System.out or System.err by a logger.(ÍÍÎèúÿÿÿÿ
+S	java:S106X"9Replace this use of System.out or System.err by a logger.(ÂÆæ¦üÿÿÿÿ

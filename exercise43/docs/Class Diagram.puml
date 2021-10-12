@@ -11,7 +11,8 @@ class InputClass {
 
 class OutputClass {
   +createWebFolder(String siteName)
-  +createIndexHtml(String siteName, String author)
+  +buildIndexHtml(String siteName, String author)
+  +createIndexHtml(String siteName, String siteName, List<String> indexHtml)
   +createJavaScriptFolder(String siteName, Boolean javaScriptFolder)
   +createCssFolder(String siteName, Boolean cssFolder)
 }

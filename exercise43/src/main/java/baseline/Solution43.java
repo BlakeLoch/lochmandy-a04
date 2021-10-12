@@ -5,6 +5,9 @@
 
 package baseline;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Solution43 {
 
   public static void main(String[] args) {
@@ -21,7 +24,8 @@ public class Solution43 {
 
     // Create files
     output.createWebFolder(siteName);
-    output.createIndexHtml(siteName, author);
+    List<String> indexHtml = new ArrayList<>(output.buildIndexHtml(siteName, author));
+    output.createIndexHtml(siteName, indexHtml);
     output.createJavaScriptFolder(siteName, javaScriptFolder);
     output.createCssFolder(siteName, cssFolder);
 
