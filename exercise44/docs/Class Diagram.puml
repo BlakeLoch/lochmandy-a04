@@ -2,10 +2,11 @@
 
 class InputClass {
   +importJson()
+  -processData()
 }
 
 class SearchClass {
-  -getSearchStringFromUser()
+  +getSearchStringFromUser()
   +searchProductList(List<Map<String, String>> productList)
 }
 

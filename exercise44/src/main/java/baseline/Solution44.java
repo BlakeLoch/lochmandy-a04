@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import javax.print.DocFlavor.STRING;
 
 public class Solution44 {
 
@@ -23,7 +24,8 @@ public class Solution44 {
     List<Map<String, String>> productList = new ArrayList<>(input.importJson());
 
     // search product list
-    Map<String, String> productInfo = new HashMap<String, String>(search.searchProductList(productList);
+    String initialSearch = search.getSearchStringFromUser();
+    Map<String, String> productInfo = new HashMap<>(search.searchProductList(productList, initialSearch));
 
     // print productInfo
     output.print(productInfo);

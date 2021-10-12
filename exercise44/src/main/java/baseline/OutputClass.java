@@ -11,8 +11,11 @@ public class OutputClass {
 
   public void print(Map<String, String> productInfo) {
     // print "Name = "+product name
+    System.out.println(productInfo.get("name"));
     // print "Price = "+product price
+    System.out.println(productInfo.get("price"));
     // print "Quantity = "+product quantity
+    System.out.println(productInfo.get("quantity"));
   }
 
 }
