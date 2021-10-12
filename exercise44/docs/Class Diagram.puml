@@ -1,0 +1,16 @@
+@startuml
+
+class InputClass {
+  +importJson()
+}
+
+class SearchClass {
+  -getSearchStringFromUser()
+  +searchProductList(List<Map<String, String>> productList)
+}
+
+class OutputClass {
+  +print(Map<String, String> productInfo)
+}
+
+@enduml
