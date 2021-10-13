@@ -13,4 +13,12 @@ class OutputClass {
   +writeToFile(String outputFile, String outputString)
 }
 
+class Solution45 {
++main(String[])
+}
+
+Solution45 -- InputClass
+Solution45 -- CalcClass
+Solution45 -- OutputClass
+
 @enduml

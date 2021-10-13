@@ -15,4 +15,12 @@ class OutputClass {
   -longestWordLength(Set<String> words)
 }
 
+class Solution46 {
++main(String[])
+}
+
+Solution46 -- InputClass
+Solution46 -- CalcClass
+Solution46 -- OutputClass
+
 @enduml

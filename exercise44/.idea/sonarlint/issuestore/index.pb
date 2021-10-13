@@ -1,8 +1,6 @@
 
 <
 build.gradle,f/0/f07866736216be0ee2aba49e392191aeae700a35
-G
-docs/Class Diagram.puml,e/2/e2792763866d223d37c30ecf4f01550e6cdead94
 J
 data/exercise44_input.json,c/f/cfcd15bd9321f4c3f0770cd865d4568c14c53f8e
 V
@@ -15,3 +13,5 @@ V
 &src/main/java/baseline/InputClass.java,1/d/1d5a34b886947090b98ec1dacff0d4634b2647d5
 [
 +src/test/java/baseline/SearchClassTest.java,d/e/de6b878169a1c6054d7f433c48e233ac203ab7bd
+G
+docs/Class Diagram.puml,e/2/e2792763866d223d37c30ecf4f01550e6cdead94

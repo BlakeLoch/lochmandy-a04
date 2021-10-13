@@ -17,4 +17,11 @@ class OutputClass {
   +createCssFolder(String siteName, Boolean cssFolder)
 }
 
+class Solution43 {
++main(String[])
+}
+
+Solution43 -- InputClass
+Solution43 -- OutputClass
+
 @enduml

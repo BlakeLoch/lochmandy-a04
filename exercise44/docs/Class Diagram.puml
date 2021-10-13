@@ -14,4 +14,12 @@ class OutputClass {
   +print(Map<String, String> productInfo)
 }
 
+class Solution44 {
++main(String[])
+}
+
+Solution44 -- InputClass
+Solution44 -- SearchClass
+Solution44 -- OutputClass
+
 @enduml

@@ -12,5 +12,13 @@ class FileOutput {
   +writeNames(List<String> names)
 }
 
+class Solution41 {
++main(String[])
+}
+
+Solution41 -- FileInput
+Solution41 -- NameSorter
+Solution41 -- FileOutput
+
 
 @enduml

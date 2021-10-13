@@ -12,5 +12,13 @@ class FileOutput {
   +writeTable(List<String> dataTable)
 }
 
+class Solution42 {
++main(String[])
+}
+
+Solution42 -- FileInput
+Solution42 -- DataParser
+Solution42 -- FileOutput
+
 
 @enduml
