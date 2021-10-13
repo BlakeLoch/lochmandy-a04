@@ -18,13 +18,13 @@ public class Solution42 {
     FileOutput fileOut = new FileOutput();
 
     // Import data from file
-    List<String> rawData = new ArrayList<>(fileIn.readData());
+    List<String> rawData = new ArrayList<>(fileIn.readData("data/exercise42_input.txt"));
 
     // Parse data into a table
     List<String> dataTable = dataParser.parseData(rawData);
 
     // Print output to file
-    fileOut.writeTable(dataTable);
+    fileOut.writeTable(dataTable, "data/exercise42_output.txt");
 
   }
 

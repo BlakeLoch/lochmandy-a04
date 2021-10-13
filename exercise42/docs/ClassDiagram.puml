@@ -1,7 +1,7 @@
 @startuml
 
 class FileInput {
-  +readData()
+  +readData(String inputFile)
 }
 
 class DataParser {
@@ -9,7 +9,7 @@ class DataParser {
 }
 
 class FileOutput {
-  +writeTable(List<String> dataTable)
+  +writeTable(List<String> dataTable, outputFile)
 }
 
 class Solution42 {

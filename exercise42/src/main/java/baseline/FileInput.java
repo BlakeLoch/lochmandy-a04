@@ -14,10 +14,7 @@ import java.util.Scanner;
 public class FileInput {
 
   // read data into array list
-  public List<String> readData() {
-
-    // Select File
-    String inputFile = "data/exercise42_input.txt";
+  public List<String> readData(String inputFile) {
 
     // Store Data
     List<String> rawData = new ArrayList<>();

@@ -12,10 +12,8 @@ import java.util.List;
 public class FileOutput {
 
   //write table to output file
-  public void writeTable(List<String> dataTable) {
+  public void writeTable(List<String> dataTable, String outputFile) {
 
-    // Select file
-    String outputFile = "data/exercise42_output.txt";
     // open file
     try (FileWriter output = new FileWriter(outputFile)) {
       // write "Last      First     Salary"
