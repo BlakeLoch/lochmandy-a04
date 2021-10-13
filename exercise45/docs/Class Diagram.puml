@@ -2,6 +2,7 @@
 
 class InputClass {
   +readFile()
+  +getOutputFileNameFromUser()
 }
 
 class CalcClass {

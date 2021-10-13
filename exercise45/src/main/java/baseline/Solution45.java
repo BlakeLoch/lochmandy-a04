@@ -15,7 +15,7 @@ public class Solution45 {
     OutputClass output = new OutputClass();
 
     // Read data from file
-    String data = input.readFile();
+    String data = input.readFile("exercise45_input.txt");
 
     // Replace "utilize" with "use"
     String outputString = calc.replaceUtilizeWithUse(data);

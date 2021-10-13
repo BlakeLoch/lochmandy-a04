@@ -14,11 +14,11 @@ public class InputClass {
 
   private static final Scanner input = new Scanner(System.in);
 
-  public String readFile() {
+  public String readFile(String inputFile) {
     // read file as a string
     String data = "";
     try {
-      data =  Files.readString(Path.of("data/exercise45_input.txt"));
+      data =  Files.readString(Path.of("data/"+inputFile));
     } catch (IOException e) {
       e.printStackTrace();
     }
