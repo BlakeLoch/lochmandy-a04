@@ -18,13 +18,13 @@ public class Solution41 {
     FileOutput fileOut = new FileOutput();
 
     // Import data from file
-    List<String> names = new ArrayList<>(fileIn.readNames());
+    List<String> names = new ArrayList<>(fileIn.readNames("data/exercise41_input.txt"));
 
     // Sort list alphabetically
     sorter.sortNames(names);
 
     // Print output to file
-    fileOut.writeNames(names);
+    fileOut.writeNames(names, "data/exercise41_output.txt");
 
   }
 

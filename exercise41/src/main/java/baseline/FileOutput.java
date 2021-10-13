@@ -12,10 +12,8 @@ import java.util.List;
 public class FileOutput {
 
   //write names to output file
-  public void writeNames(List<String> names) {
+  public void writeNames(List<String> names, String outputFile) {
 
-    //Select file
-    String outputFile = "data/exercise41_output.txt";
     // open file
     try (FileWriter output = new FileWriter(outputFile)) {
       // write "Total of 'names'.length names"

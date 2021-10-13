@@ -1,7 +1,7 @@
 @startuml
 
 class FileInput {
-  +readNames()
+  +readNames(String inputFile)
 }
 
 class NameSorter {
@@ -9,9 +9,8 @@ class NameSorter {
 }
 
 class FileOutput {
-  +writeNames(List<String> names)
+  +writeNames(List<String> names, String outputFile)
 }
-
 class Solution41 {
 +main(String[])
 }
@@ -19,6 +18,7 @@ class Solution41 {
 Solution41 -- FileInput
 Solution41 -- NameSorter
 Solution41 -- FileOutput
+
 
 
 @enduml
