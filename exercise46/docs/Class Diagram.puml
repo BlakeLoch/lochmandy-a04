@@ -11,6 +11,8 @@ class CalcClass {
 
 class OutputClass {
   +printHistogram(List<Map<String, Integer>> frequencies)
+  -sortFrequencies(Map<String, Integer> frequencies)
+  -longestWordLength(Set<String> words)
 }
 
 @enduml

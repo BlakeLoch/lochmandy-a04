@@ -5,16 +5,22 @@
 
 package baseline;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class CalcClass {
 
-  public List<Map<String, Integer>> countOccurrences(String data) {
+  public Map<String, Integer> countOccurrences(String data) {
 
-    // split the words from data into a map
-    // count occurrences into list of maps
-    // return list of maps
+    // split the words from data into a list
+    List <String> list = Stream.of(data).map(w -> w.split("\\s+")).flatMap(Arrays::stream).toList();
+
+    // return map where the occurrences are counted
+    return list.stream()
+        .collect(Collectors.toMap(String::toLowerCase, w -> 1, Integer::sum));
 
   }
 
