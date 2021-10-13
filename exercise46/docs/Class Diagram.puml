@@ -1,7 +1,7 @@
 @startuml
 
 class InputClass {
-  +readFile()
+  +readFile(String inputFile)
 }
 
 class CalcClass {

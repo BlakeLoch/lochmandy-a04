@@ -17,7 +17,7 @@ public class Solution46 {
     OutputClass output = new OutputClass();
 
     // Read input from file
-    String data = input.readFile();
+    String data = input.readFile("exercise46_input.txt");
 
     // Count occurrences of each word
     Map<String, Integer> frequencies = calc.countOccurrences(data);

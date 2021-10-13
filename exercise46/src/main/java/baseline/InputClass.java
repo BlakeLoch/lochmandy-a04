@@ -11,12 +11,12 @@ import java.nio.file.Path;
 
 public class InputClass {
 
-  public String readFile() {
+  public String readFile(String inputFile) {
 
     // read file as a string
     String data = "";
     try {
-      data =  Files.readString(Path.of("data/exercise46_input.txt"));
+      data =  Files.readString(Path.of("data/"+inputFile));
     } catch (IOException e) {
       e.printStackTrace();
     }
