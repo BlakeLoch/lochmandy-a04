@@ -17,9 +17,7 @@ import java.util.List;
 public class InputClass {
 
   // import data from json to list of maps
-  public List<HashMap<String, String>> importJson() {
-    // select file
-    String dataFile = "data/exercise44_input.json";
+  public List<HashMap<String, String>> importJson(String dataFile) {
 
     //process data
     String data = processRawData(dataFile);

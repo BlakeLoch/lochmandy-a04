@@ -9,7 +9,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import javax.print.DocFlavor.STRING;
 
 public class Solution44 {
 
@@ -21,7 +20,7 @@ public class Solution44 {
     OutputClass output = new OutputClass();
 
     // import data from json to list of maps
-    List<Map<String, String>> productList = new ArrayList<>(input.importJson());
+    List<Map<String, String>> productList = new ArrayList<>(input.importJson("data/exercise44_input.json"));
 
     // search product list
     String initialSearch = search.getSearchStringFromUser();
