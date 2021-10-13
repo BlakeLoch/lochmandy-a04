@@ -13,7 +13,7 @@ public class OutputClass {
 
   public void writeToFile(String outputFile, String outputString) {
     // create file data/'outputFile'
-    try (FileWriter output = new FileWriter("data"+ File.separator+outputFile)) {
+    try (FileWriter output = new FileWriter("data" + File.separator + outputFile)) {
 
       // write outputString to file
       output.write(outputString);

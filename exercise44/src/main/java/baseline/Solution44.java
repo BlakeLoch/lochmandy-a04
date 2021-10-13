@@ -20,11 +20,13 @@ public class Solution44 {
     OutputClass output = new OutputClass();
 
     // import data from json to list of maps
-    List<Map<String, String>> productList = new ArrayList<>(input.importJson("data/exercise44_input.json"));
+    List<Map<String, String>> productList = new ArrayList<>(
+        input.importJson("data/exercise44_input.json"));
 
     // search product list
     String initialSearch = search.getSearchStringFromUser();
-    Map<String, String> productInfo = new HashMap<>(search.searchProductList(productList, initialSearch));
+    Map<String, String> productInfo = new HashMap<>(
+        search.searchProductList(productList, initialSearch));
 
     // print productInfo
     output.print(productInfo);

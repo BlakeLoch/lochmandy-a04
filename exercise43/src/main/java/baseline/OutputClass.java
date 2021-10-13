@@ -19,8 +19,8 @@ public class OutputClass {
 
   public void createWebFolder(String siteName) {
     // create folder website/siteName
-    File webFolder = new File(WEBSITE +File.separator+siteName);
-    if(webFolder.mkdirs()) {
+    File webFolder = new File(WEBSITE + File.separator + siteName);
+    if (webFolder.mkdirs()) {
       // print "Created ./website/'siteName'"
       System.out.println(CREATED_WEBSITE + siteName);
     } else {
@@ -36,20 +36,21 @@ public class OutputClass {
     //add <head>
     indexHtml.add("<head>");
     // add "<title>"'siteName'"</title>" to index.html
-    indexHtml.add("\t<title>"+siteName+"</title>");
+    indexHtml.add("\t<title>" + siteName + "</title>");
     // add "<meta author="'author'">" to index.html
-    indexHtml.add("\t<meta author=\""+author+"\">");
+    indexHtml.add("\t<meta author=\"" + author + "\">");
 
     return indexHtml;
   }
 
   public void createIndexHtml(String siteName, List<String> indexHtml) {
     // create file website/'siteName'/index.html
-    try (FileWriter output = new FileWriter(WEBSITE +File.separator+siteName+File.separator+"index.html")) {
+    try (FileWriter output = new FileWriter(
+        WEBSITE + File.separator + siteName + File.separator + "index.html")) {
 
       // write each line of index.html to file
-      for (String line :indexHtml) {
-        output.write(line+"\n");
+      for (String line : indexHtml) {
+        output.write(line + "\n");
       }
 
       // print "Created ./website/'siteName'/index.html"
@@ -64,8 +65,8 @@ public class OutputClass {
     // if javaScriptFolder is true
     if (javaScriptFolder) {
       // create folder website/'siteName'/js
-      File webFolder = new File(WEBSITE +File.separator+siteName+File.separator+"js");
-      if(webFolder.mkdirs()) {
+      File webFolder = new File(WEBSITE + File.separator + siteName + File.separator + "js");
+      if (webFolder.mkdirs()) {
         // print "Created ./website/'siteName'/js"
         System.out.println(CREATED_WEBSITE + siteName + "/js");
       } else {
@@ -79,8 +80,8 @@ public class OutputClass {
     // if cssFolder is true
     if (cssFolder) {
       // create folder website/'siteName'/css
-      File webFolder = new File(WEBSITE +File.separator+siteName+File.separator+"css");
-      if(webFolder.mkdirs()) {
+      File webFolder = new File(WEBSITE + File.separator + siteName + File.separator + "css");
+      if (webFolder.mkdirs()) {
         // print "Created ./website/'siteName'/css"
         System.out.println(CREATED_WEBSITE + siteName + "/css");
       } else {

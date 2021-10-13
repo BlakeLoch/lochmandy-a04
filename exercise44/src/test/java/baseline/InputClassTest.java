@@ -5,7 +5,7 @@
 
 package baseline;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -40,7 +40,8 @@ class InputClassTest {
     expected.add(thing);
     expected.add(doodad);
 
-    List<Map<String, String>> actual = new ArrayList<>(input.importJson("data/exercise44_inputTest.json"));
+    List<Map<String, String>> actual = new ArrayList<>(
+        input.importJson("data/exercise44_inputTest.json"));
 
     assertEquals(expected, actual);
 

@@ -5,13 +5,13 @@
 
 package baseline;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import org.junit.jupiter.api.Test;
@@ -39,8 +39,8 @@ class OutputClassTest {
     List<String> expected = new ArrayList<>();
     expected.add("<!DOCTYPE html>");
     expected.add("<head>");
-    expected.add("\t<title>"+"siteName"+"</title>");
-    expected.add("\t<meta author=\""+"author"+"\">");
+    expected.add("\t<title>" + "siteName" + "</title>");
+    expected.add("\t<meta author=\"" + "author" + "\">");
 
     List<String> actual = new ArrayList<>(output.buildIndexHtml("siteName", "author"));
 
@@ -63,11 +63,12 @@ class OutputClassTest {
     List<String> indexHtml = new ArrayList<>();
     indexHtml.add("<!DOCTYPE html>");
     indexHtml.add("<head>");
-    indexHtml.add("\t<title>"+"siteName"+"</title>");
-    indexHtml.add("\t<meta author=\""+"author"+"\">");
+    indexHtml.add("\t<title>" + "siteName" + "</title>");
+    indexHtml.add("\t<meta author=\"" + "author" + "\">");
 
     output.createIndexHtml(siteName, indexHtml);
-    assertTrue(Files.exists(Path.of("data/website" + File.separator + siteName + File.separator+"index.html" )));
+    assertTrue(Files.exists(
+        Path.of("data/website" + File.separator + siteName + File.separator + "index.html")));
 
   }
 
@@ -102,7 +103,8 @@ class OutputClassTest {
     OutputClass output = new OutputClass();
     String siteName = "testSite";
     output.createJavaScriptFolder(siteName, true);
-    assertTrue(Files.exists(Path.of("data/website" + File.separator + siteName+File.separator+"js")));
+    assertTrue(
+        Files.exists(Path.of("data/website" + File.separator + siteName + File.separator + "js")));
   }
 
   @Test
@@ -110,6 +112,7 @@ class OutputClassTest {
     OutputClass output = new OutputClass();
     String siteName = "testSite";
     output.createCssFolder(siteName, true);
-    assertTrue(Files.exists(Path.of("data/website" + File.separator + siteName+File.separator+"css")));
+    assertTrue(
+        Files.exists(Path.of("data/website" + File.separator + siteName + File.separator + "css")));
   }
 }

@@ -16,7 +16,7 @@ public class CalcClass {
   public Map<String, Integer> countOccurrences(String data) {
 
     // split the words from data into a list
-    List <String> list = Stream.of(data).map(w -> w.split("\\s+")).flatMap(Arrays::stream).toList();
+    List<String> list = Stream.of(data).map(w -> w.split("\\s+")).flatMap(Arrays::stream).toList();
 
     // return map where the occurrences are counted
     return list.stream()

@@ -23,17 +23,17 @@ public class FileInput {
     File input = new File(inputFile);
     try (Scanner readFile = new Scanner(input)) {
 
-    // set delimiter to comma
+      // set delimiter to comma
       readFile.useDelimiter("[,\\n]");
 
-    // loop through file
+      // loop through file
       while (readFile.hasNext()) {
 
         // store values in rawData
         rawData.add(readFile.next());
       }
 
-    // close file
+      // close file
     } catch (FileNotFoundException e) {
       System.out.println("An error occurred.");
       e.printStackTrace();

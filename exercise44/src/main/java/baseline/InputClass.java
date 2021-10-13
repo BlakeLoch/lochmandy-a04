@@ -25,7 +25,8 @@ public class InputClass {
     // initiate Gson
     Gson gson = new Gson();
     // set list type
-    Type listType = new TypeToken<List<HashMap<String, String>>>(){}.getType();
+    Type listType = new TypeToken<List<HashMap<String, String>>>() {
+    }.getType();
     // import data into list of maps
     return gson.fromJson(data, listType);
   }
@@ -38,7 +39,7 @@ public class InputClass {
       data = Files.readString(Path.of(dataFile));
       data = data.substring(data.indexOf("["));
       data = data.trim();
-      data = data.substring(0, data.indexOf("]")+1);
+      data = data.substring(0, data.indexOf("]") + 1);
 
     } catch (IOException e) {
       e.printStackTrace();

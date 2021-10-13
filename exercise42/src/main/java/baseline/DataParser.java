@@ -18,7 +18,8 @@ public class DataParser {
     // Loop through rawData
     for (int i = 0; i < rawData.size() - 2; i += 3) {
       // add 'item 1 + tab + item 2 + tab + item 3' to dataTable
-      dataTable.add(String.format("%-9s %-9s %s", rawData.get(i), rawData.get(i+1), rawData.get(i+2)));
+      dataTable.add(
+          String.format("%-9s %-9s %s", rawData.get(i), rawData.get(i + 1), rawData.get(i + 2)));
     }
 
     // return dataTable

@@ -16,7 +16,7 @@ public class InputClass {
     // read file as a string
     String data = "";
     try {
-      data =  Files.readString(Path.of("data/"+inputFile));
+      data = Files.readString(Path.of("data/" + inputFile));
     } catch (IOException e) {
       e.printStackTrace();
     }

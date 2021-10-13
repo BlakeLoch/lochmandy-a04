@@ -20,17 +20,17 @@ public class OutputClass {
     // for each word in frequencies
     Set<String> words = frequencies.keySet();
     int longestWordLength = longestWordLength(words);
-    String format = "%-"+(longestWordLength+2)+"s";
+    String format = "%-" + (longestWordLength + 2) + "s";
     for (String word : words) {
       // print "'word':"
-      System.out.printf(format, word+":");
+      System.out.printf(format, word + ":");
       // loop from 1 to the integer frequency of word
       for (int j = 0; j < frequencies.get(word); j++) {
         // print "*"
         System.out.print("*");
       }
-    // print newline
-    System.out.print("\n");
+      // print newline
+      System.out.print("\n");
     }
 
   }

@@ -5,7 +5,7 @@
 
 package baseline;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -55,7 +55,7 @@ class FileOutputTest {
     names.add("Xiong, Fong");
     names.add("Zarnecki, Sabrina");
 
-    fileOut.writeNames(names,"data/exercise41_outputTest.txt");
+    fileOut.writeNames(names, "data/exercise41_outputTest.txt");
 
     String actual = readFile("data/exercise41_outputTest.txt");
 

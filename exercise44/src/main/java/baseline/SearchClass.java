@@ -21,7 +21,8 @@ public class SearchClass {
     return input.nextLine();
   }
 
-  public Map<String, String> searchProductList(List<Map<String, String>> productList, String initialSearch) {
+  public Map<String, String> searchProductList(List<Map<String, String>> productList,
+      String initialSearch) {
     Map<String, String> outMap = new HashMap<>();
 
     String searchString = initialSearch;
@@ -48,8 +49,8 @@ public class SearchClass {
       }
 
       // while outMap is not empty/default
-    } while(outMap.isEmpty());
+    } while (outMap.isEmpty());
     // return outMap
-      return outMap;
+    return outMap;
   }
 }

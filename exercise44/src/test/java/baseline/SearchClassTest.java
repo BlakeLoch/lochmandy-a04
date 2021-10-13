@@ -5,7 +5,7 @@
 
 package baseline;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -46,7 +46,6 @@ class SearchClassTest {
     productList.add(thing);
     productList.add(doodad);
 
-
     Map<String, String> actual = new HashMap<>(search.searchProductList(productList, "Widget"));
 
     assertEquals(expected, actual);
@@ -82,7 +81,6 @@ class SearchClassTest {
     productList.add(widget);
     productList.add(thing);
     productList.add(doodad);
-
 
     Map<String, String> actual = new HashMap<>(search.searchProductList(productList, "Thing"));
 
