@@ -5,6 +5,7 @@
 
 package baseline;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,13 +19,13 @@ public class Solution41 {
     FileOutput fileOut = new FileOutput();
 
     // Import data from file
-    List<String> names = new ArrayList<>(fileIn.readNames("data/exercise41_input.txt"));
+    List<String> names = new ArrayList<>(fileIn.readNames("data" + File.separator + "exercise41_input.txt"));
 
     // Sort list alphabetically
     sorter.sortNames(names);
 
     // Print output to file
-    fileOut.writeNames(names, "data/exercise41_output.txt");
+    fileOut.writeNames(names, "data" + File.separator + "exercise41_output.txt");
 
   }
 

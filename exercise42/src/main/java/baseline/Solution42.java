@@ -5,6 +5,7 @@
 
 package baseline;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,13 +19,13 @@ public class Solution42 {
     FileOutput fileOut = new FileOutput();
 
     // Import data from file
-    List<String> rawData = new ArrayList<>(fileIn.readData("data/exercise42_input.txt"));
+    List<String> rawData = new ArrayList<>(fileIn.readData("data" + File.separator + "exercise42_input.txt"));
 
     // Parse data into a table
     List<String> dataTable = dataParser.parseData(rawData);
 
     // Print output to file
-    fileOut.writeTable(dataTable, "data/exercise42_output.txt");
+    fileOut.writeTable(dataTable, "data"+ File.separator +"exercise42_output.txt");
 
   }
 

@@ -5,6 +5,7 @@
 
 package baseline;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -21,7 +22,7 @@ public class Solution44 {
 
     // import data from json to list of maps
     List<Map<String, String>> productList = new ArrayList<>(
-        input.importJson("data/exercise44_input.json"));
+        input.importJson("data" + File.separator + "exercise44_input.json"));
 
     // search product list
     String initialSearch = search.getSearchStringFromUser();
