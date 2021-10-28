@@ -7,6 +7,7 @@ package baseline;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -52,8 +53,8 @@ class FileOutputTest {
     dataTable.add("Xiong     Fong      65000");
     dataTable.add("Zarnecki  Sabrina   51500");
 
-    fileOut.writeTable(dataTable, "data/exercise42_outputTest.txt");
-    String actual = readFile("data/exercise42_outputTest.txt");
+    fileOut.writeTable(dataTable, "data" + File.separator + "exercise42_outputTest.txt");
+    String actual = readFile("data" + File.separator + "exercise42_outputTest.txt");
     assertEquals(expected, actual);
 
   }

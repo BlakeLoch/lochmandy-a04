@@ -52,7 +52,7 @@ class OutputClassTest {
     OutputClass output = new OutputClass();
     String siteName = "testSite";
     output.createWebFolder(siteName);
-    assertTrue(Files.exists(Path.of("data/website" + File.separator + siteName)));
+    assertTrue(Files.exists(Path.of("data" + File.separator + "website" + File.separator + siteName)));
   }
 
   @Test
@@ -68,7 +68,7 @@ class OutputClassTest {
 
     output.createIndexHtml(siteName, indexHtml);
     assertTrue(Files.exists(
-        Path.of("data/website" + File.separator + siteName + File.separator + "index.html")));
+        Path.of("data" + File.separator + "website" + File.separator + siteName + File.separator + "index.html")));
 
   }
 
@@ -92,7 +92,7 @@ class OutputClassTest {
 
     output.createIndexHtml(siteName, indexHtml);
 
-    String actual = readFile("data/website/testSite/index.html");
+    String actual = readFile("data" + File.separator + "website" + File.separator + "testSite" + File.separator + "index.html");
 
     assertEquals(expected, actual);
 
@@ -104,7 +104,7 @@ class OutputClassTest {
     String siteName = "testSite";
     output.createJavaScriptFolder(siteName, true);
     assertTrue(
-        Files.exists(Path.of("data/website" + File.separator + siteName + File.separator + "js")));
+        Files.exists(Path.of("data" + File.separator + "website" + File.separator + siteName + File.separator + "js")));
   }
 
   @Test
@@ -113,6 +113,6 @@ class OutputClassTest {
     String siteName = "testSite";
     output.createCssFolder(siteName, true);
     assertTrue(
-        Files.exists(Path.of("data/website" + File.separator + siteName + File.separator + "css")));
+        Files.exists(Path.of("data" + File.separator + "website" + File.separator + siteName + File.separator + "css")));
   }
 }

@@ -7,6 +7,7 @@ package baseline;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import org.junit.jupiter.api.Test;
@@ -27,7 +28,7 @@ class FileInputTest {
     expected.add("Swift, Geoffrey");
     expected.add("Xiong, Fong");
 
-    List<String> actual = new ArrayList<>(fileIn.readNames("data/exercise41_inputTest.txt"));
+    List<String> actual = new ArrayList<>(fileIn.readNames("data" + File.separator + "exercise41_inputTest.txt"));
 
     assertEquals(expected, actual);
   }
